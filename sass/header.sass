@@ -1,0 +1,42 @@
+@import "bourbon"
+
+$main-color: #f39f18
+$headers-color: #2c3949
+
+body
+	font-size: 15px
+	min-width: 320px
+	position: relative
+	line-height: em(22px)
+	font-family: "RalewayRegular", sans-serif
+	overflow-x: hidden
+	color: #333
+
+.hidden
+	display: none
+
+a, a:hover, a:focus, a:active
+	color: $main-color
+	text-decoration: underline	
+
+.headers
+	font-family: 'PFCentroSlabProMedium', $helvetica
+	text-transform: uppercase
+	font-weight: normal
+	color: $headers-color
+
+h1, h2, h3, h4, h5, h6
+	@extend .headers
+
+h1
+	font-size: em(48px)	
+	text-transform: none
+
+h2
+	font-size: em(30px)
+
+h3
+	font-size: em(24px)
+
+b, strong
+	font-family: 'RalewayBold', $helvetica		
