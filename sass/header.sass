@@ -1,7 +1,5 @@
 @import "bourbon"
-
-$main-color: #f39f18
-$headers-color: #2c3949
+@import "_var.sass"
 
 body
 	font-size: 15px
@@ -27,6 +25,7 @@ a, a:hover, a:focus, a:active
 
 h1, h2, h3, h4, h5, h6
 	@extend .headers
+	line-height: em(22px)
 
 h1
 	font-size: em(48px)	
@@ -40,6 +39,7 @@ h3
 
 b, strong
 	font-family: 'RalewayBold', $helvetica
+	font-weight: normal
 
 .before
 	content: ''
@@ -260,10 +260,18 @@ b, strong
 	padding: 12px 30px
 	border-bottom: #b97200 3px solid
 	transition: all .5s ease
+	text-decoration: none
 	&:hover
 		background-color: #ffb338
+		text-decoration: none
+		color: #111
 	&:active
 		background-color: #DB8C0E
+		text-decoration: none
+		color: #111
+	&:focus
+		color: #111	
+		text-decoration: none
 
 
 .arrow-wrap
